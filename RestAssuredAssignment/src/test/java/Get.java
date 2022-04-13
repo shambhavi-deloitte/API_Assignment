@@ -1,3 +1,4 @@
+import ExtentReport.extentreport;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -17,7 +18,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThan;
 
-public class Get {
+public class Get extends extentreport {
     RequestSpecification requestSpecification;
     ResponseSpecification responseSpecification;
 
